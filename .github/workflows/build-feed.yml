@@ -1,0 +1,57 @@
+name: Build Media Selangor RSS feed
+
+on:
+  schedule:
+    # GitHub cron is UTC; Malaysia is a fixed UTC+8 (no DST).
+    # 08:00–17:00 MYT == 00:00–09:00 UTC.
+    - cron: '0,30 0-8 * * *'   # every :00 and :30 from 08:00 to 16:30 MYT
+    - cron: '0 9 * * *'        # 17:00 MYT
+  workflow_dispatch:           # manual "Run workflow" button
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-feed
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: requirements.txt
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Build feed
+        run: python scripts/build_feed.py
+
+      - name: Commit updated feed
+        run: |
+          set -euo pipefail
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/feed.xml state/seen.json
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          git commit -m "Update feed $(date -u +'%Y-%m-%dT%H:%MZ')"
+          # Push with a short rebase-retry loop in case a concurrent run landed first.
+          for attempt in 1 2 3; do
+            if git push; then
+              echo "Pushed on attempt $attempt."
+              exit 0
+            fi
+            echo "Push failed (attempt $attempt); rebasing and retrying…"
+            git pull --rebase --autostash
+          done
+          echo "Failed to push after retries." >&2
+          exit 1

@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rss xmlns:media="http://search.yahoo.com/mrss/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>Media Selangor — Terkini (BM)</title>
+    <link>https://mediaselangor.com/ms/latest</link>
+    <description>Berita terkini Media Selangor (Bahasa Melayu), dijana automatik daripada mediaselangor.com/ms/latest.</description>
+    <atom:link href="https://novinthen.github.io/mediaselangor_latest_rss/feed.xml" rel="self"/>
+    <docs>https://www.rssboard.org/rss-specification</docs>
+    <generator>mediaselangor-rss (+github.com/novinthen/mediaselangor_latest_rss)</generator>
+    <language>ms</language>
+    <item>
+      <title>Suapan sedang dimulakan…</title>
+      <link>https://mediaselangor.com/ms/latest</link>
+      <description>Suapan RSS ini akan diisi secara automatik pada larian pertama GitHub Actions. / This RSS feed will be populated automatically on the first GitHub Actions run.</description>
+      <guid isPermaLink="false">mediaselangor-rss:placeholder</guid>
+    </item>
+  </channel>
+</rss>
