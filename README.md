@@ -93,9 +93,37 @@ python tests/test_parser.py        # or: pytest tests/
 
 ## Schedule
 
-GitHub cron is UTC and Malaysia is a fixed UTC+8 (no daylight saving), so
-08:00–17:00 MYT = 00:00–09:00 UTC. The two cron entries fire at every `:00`
-and `:30` across that window (~19 runs/day).
+The 30-minute cadence (08:00–17:00 MYT) is driven by an **external scheduler**,
+because GitHub's native `schedule:` cron is best-effort and routinely drops or
+delays runs at the top of the hour. GitHub's cron is kept only as a low-frequency
+safety net (`13 1,7 * * *` → 09:13 & 15:13 MYT).
+
+### External scheduler (primary trigger)
+
+A free [cron-job.org](https://cron-job.org) job calls the `workflow_dispatch` REST
+API on a precise schedule, authenticated with a **fine-grained PAT** scoped to this
+repo only.
+
+1. **Fine-grained PAT** — GitHub → Settings → Developer settings → Personal access
+   tokens → *Fine-grained tokens*:
+   - Resource owner `novinthen`; Repository access → **Only** `mediaselangor_latest_rss`.
+   - Permissions → **Actions: Read and write** (Metadata read-only is auto-added). Nothing else.
+   - Set an expiration and a rotation reminder. Copy the token once.
+2. **cron-job.org job:**
+   - Method `POST`, URL
+     `https://api.github.com/repos/novinthen/mediaselangor_latest_rss/actions/workflows/build-feed.yml/dispatches`
+   - Headers:
+     - `Authorization: Bearer <PAT>`
+     - `Accept: application/vnd.github+json`
+     - `X-GitHub-Api-Version: 2022-11-28`
+   - Body: `{"ref":"main"}`
+   - Schedule: timezone `Asia/Kuala_Lumpur`, every 30 min from 08:00 to 17:00.
+   - A successful trigger returns **HTTP 204 No Content**.
+
+The PAT lives in cron-job.org, **not** in the repo — no GitHub repo secret is
+needed, and its minimal scope means a leaked token can at most trigger this one
+workflow. More secure but heavier alternatives: a GitHub App (short-lived tokens),
+or hosting the trigger on Cloudflare Workers Cron with the PAT as a Worker secret.
 
 ## Caveats
 
@@ -104,10 +132,12 @@ and `:30` across that window (~19 runs/day).
   sends realistic browser headers and retries; if Actions runners are still
   blocked, set `MS_FALLBACK_READER` (e.g. to a reader proxy) as a workflow env
   var. A block surfaces as a failed Action, never a blank feed.
-* **Best-effort scheduling.** GitHub may delay cron by a few minutes under load
-  — fine for a 30-minute cadence.
+* **Scheduling.** GitHub's native cron is unreliable (drops/delays at the top of
+  the hour), which is why the primary trigger is the external scheduler above; the
+  native cron remains only as a fallback. A missed run never loses data — the next
+  run picks up any new articles via `state/seen.json`.
 * **Inactivity disable.** GitHub disables scheduled workflows after 60 days with
-  *no repo activity*; the periodic commits keep this repo active.
+  *no repo activity*; the external trigger plus periodic commits keep this repo active.
 * **Selector drift.** If the portal is redesigned, the URL-pattern backbone
   keeps working; secondary fields degrade gracefully and the safety guard
   prevents a blank feed.
