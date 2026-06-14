@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head><meta charset="utf-8"><title>Terkini - Media Selangor</title></head>
+<body>
+  <header>
+    <nav>
+      <a href="/ms/latest">Terkini</a>
+      <a href="/ms/category/berita">Berita</a>
+      <a href="https://mediaselangor.com/en/latest">English</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="latest-list">
+
+      <!-- Card 1: fully populated, relative href -->
+      <article class="card">
+        <a href="/ms/2026/06/379390" class="card-thumb">
+          <img src="/uploads/2026/06/banjir-kilat.jpg" alt="Banjir kilat di Shah Alam" />
+        </a>
+        <div class="card-body">
+          <a href="/ms/category/berita" class="category">Berita</a>
+          <h3><a href="/ms/2026/06/379390">Banjir kilat landa beberapa kawasan di Shah Alam</a></h3>
+          <p class="excerpt">Hujan lebat sejak pagi menyebabkan paras air meningkat di beberapa lokasi rendah.</p>
+          <time datetime="2026-06-14" class="date">14 Jun 2026</time>
+        </div>
+      </article>
+
+      <!-- Card 2: absolute href, srcset thumbnail, no excerpt -->
+      <article class="card">
+        <a href="https://mediaselangor.com/ms/2026/06/379388">
+          <img data-src="//cdn.mediaselangor.com/uploads/2026/06/mbi.webp"
+               srcset="/uploads/2026/06/mbi-small.webp 480w, /uploads/2026/06/mbi-large.webp 960w"
+               alt="MBI Selangor" />
+        </a>
+        <div class="card-body">
+          <span class="kategori">Ekonomi</span>
+          <h3><a href="https://mediaselangor.com/ms/2026/06/379388">MBI Selangor umum pelaburan baharu RM2 bilion</a></h3>
+          <span class="meta">13 Jun 2026</span>
+        </div>
+      </article>
+
+      <!-- Card 3: minimal — only the link + h3, no image, no meta -->
+      <div class="card">
+        <h3><a href="/ms/2026/06/379377">Program kesukarelawanan belia Selangor dilancar</a></h3>
+      </div>
+
+      <!-- Card 4: title only in anchor text (no h3) -->
+      <li class="card">
+        <a href="/ms/2026/06/379350">Majlis perasmian pusat komuniti di Klang</a>
+        <img src="/uploads/2026/06/klang.jpg" alt="" />
+        <span class="tag">Komuniti</span>
+      </li>
+
+      <!-- Card 5: duplicate of card 1 (e.g. "trending" rail) — must be deduped -->
+      <div class="trending">
+        <a href="/ms/2026/06/379390"><h4>Banjir kilat landa beberapa kawasan di Shah Alam</h4></a>
+      </div>
+
+      <!-- Card 6 -->
+      <article class="card">
+        <a href="/ms/2026/06/379300">
+          <img src="/uploads/2026/06/sukan.jpg" alt="Sukan Selangor" />
+        </a>
+        <div class="card-body">
+          <a href="/ms/category/sukan" class="category">Sukan</a>
+          <h3><a href="/ms/2026/06/379300">Selangor juara bola sepak peringkat kebangsaan</a></h3>
+          <p class="excerpt">Pasukan negeri menewaskan lawan dengan jaringan 3-1 pada perlawanan akhir.</p>
+          <time datetime="2026-06-12">12 Jun 2026</time>
+        </div>
+      </article>
+
+    </section>
+
+    <!-- Non-article links that must be ignored -->
+    <footer>
+      <a href="/ms/about">Mengenai Kami</a>
+      <a href="/ms/2026/06/">Arkib Jun</a>
+      <a href="https://facebook.com/mediaselangor">Facebook</a>
+      <a href="/ms/category/berita">Lagi Berita</a>
+    </footer>
+  </main>
+</body>
+</html>
