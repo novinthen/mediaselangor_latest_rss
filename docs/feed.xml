@@ -8,7 +8,18 @@
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>mediaselangor-rss (+github.com/novinthen/mediaselangor_latest_rss)</generator>
     <language>ms</language>
-    <lastBuildDate>Tue, 14 Jul 2026 04:13:37 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 14 Jul 2026 04:30:37 +0000</lastBuildDate>
+    <item>
+      <title>Ahli Parlimen diminta serah laporan kesihatan sebelum 30 Oktober</title>
+      <link>https://mediaselangor.com/ms/2026/07/384356</link>
+      <description><![CDATA[<p><img src="https://mssb-media.xcms.io/publisher-c1a3f893382d2b2f8a9aa22a654d9c97/2026/06/ee665c8b5c61d97d67ec92cde21c892d.jpg" alt="Ahli Parlimen diminta serah laporan kesihatan sebelum 30 Oktober" /></p><p>Yang Dipertua Dewan Rakyat Tan Sri Dr Johari Abdul meminta semua Ahli Parlimen mengemukakan laporan kesihatan masing-masing, selewat-lewatnya pada 30 Oktober ini.</p>]]></description>
+      <guid isPermaLink="true">https://mediaselangor.com/ms/2026/07/384356</guid>
+      <pubDate>Tue, 14 Jul 2026 04:30:37 +0000</pubDate>
+      <media:group>
+        <media:content url="https://mssb-media.xcms.io/publisher-c1a3f893382d2b2f8a9aa22a654d9c97/2026/06/ee665c8b5c61d97d67ec92cde21c892d.jpg" medium="image"/>
+        <media:thumbnail url="https://mssb-media.xcms.io/publisher-c1a3f893382d2b2f8a9aa22a654d9c97/2026/06/ee665c8b5c61d97d67ec92cde21c892d.jpg"/>
+      </media:group>
+    </item>
     <item>
       <title>Raja Muda seru rakyat manfaat kemudahan LRT3</title>
       <link>https://mediaselangor.com/ms/2026/07/384344</link>
@@ -216,17 +227,6 @@
       <media:group>
         <media:content url="https://mssb-media.xcms.io/publisher-c1a3f893382d2b2f8a9aa22a654d9c97/2026/05/f4f632fc7a65d1874cdf0db5edaa1f00.webp" medium="image"/>
         <media:thumbnail url="https://mssb-media.xcms.io/publisher-c1a3f893382d2b2f8a9aa22a654d9c97/2026/05/f4f632fc7a65d1874cdf0db5edaa1f00.webp"/>
-      </media:group>
-    </item>
-    <item>
-      <title>AKPS siasat dakwaan pegawai terima RM100 di KLIA</title>
-      <link>https://mediaselangor.com/ms/2026/07/384265</link>
-      <description><![CDATA[<p><img src="https://mssb-media.xcms.io/publisher-c1a3f893382d2b2f8a9aa22a654d9c97/2025/10/58a39622733cd8f5ebe887fe06833a6a.jpg" alt="AKPS siasat dakwaan pegawai terima RM100 di KLIA" /></p><p>Agensi Kawalan dan Perlindungan Sempadan Malaysia (AKPS) membuka siasatan dalaman berhubung dakwaan salah laku dan penyalahgunaan kuasa oleh seorang pegawai bertugas di Lapangan Terbang Antarabangsa Kuala Lumpur (KLIA) Terminal 2.</p>]]></description>
-      <guid isPermaLink="true">https://mediaselangor.com/ms/2026/07/384265</guid>
-      <pubDate>Tue, 14 Jul 2026 00:30:36 +0000</pubDate>
-      <media:group>
-        <media:content url="https://mssb-media.xcms.io/publisher-c1a3f893382d2b2f8a9aa22a654d9c97/2025/10/58a39622733cd8f5ebe887fe06833a6a.jpg" medium="image"/>
-        <media:thumbnail url="https://mssb-media.xcms.io/publisher-c1a3f893382d2b2f8a9aa22a654d9c97/2025/10/58a39622733cd8f5ebe887fe06833a6a.jpg"/>
       </media:group>
     </item>
   </channel>
