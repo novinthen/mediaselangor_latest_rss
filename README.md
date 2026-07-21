@@ -24,7 +24,7 @@ mediaselangor.com/ms/latest  ──(scrape)──►  scripts/build_feed.py  ─
                                               state/seen.json          GitHub Pages
                                           (stable pubDates)         (serves the feed)
         ▲
-        └── GitHub Actions runs every 30 min, 08:00–17:00 MYT, and commits changes
+        └── GitHub Actions runs every 30 min, 07:00–22:00 MYT, and commits changes
 ```
 
 * **Resilient selection.** Articles are located by their stable URL pattern
@@ -93,10 +93,13 @@ python tests/test_parser.py        # or: pytest tests/
 
 ## Schedule
 
-The 30-minute cadence (08:00–17:00 MYT) is driven by an **external scheduler**,
+The 30-minute cadence (07:00–22:00 MYT) is driven by an **external scheduler**,
 because GitHub's native `schedule:` cron is best-effort and routinely drops or
-delays runs at the top of the hour. GitHub's cron is kept only as a low-frequency
-safety net (`13 1,7 * * *` → 09:13 & 15:13 MYT).
+delays runs at the top of the hour. GitHub's cron is kept as an hourly safety
+net across the same window (`13 0-14,23 * * *` → 07:13–22:13 MYT), matching the
+[tamilnewsbot](https://github.com/novinthen/tamilnewsbot) digest schedule
+(hourly, 07:00–22:00 MYT) that consumes this feed: each :13 fallback build lands
+~45 minutes before the bot's next top-of-hour run.
 
 ### External scheduler (primary trigger)
 
@@ -117,7 +120,7 @@ repo only.
      - `Accept: application/vnd.github+json`
      - `X-GitHub-Api-Version: 2022-11-28`
    - Body: `{"ref":"main"}`
-   - Schedule: timezone `Asia/Kuala_Lumpur`, every 30 min from 08:00 to 17:00.
+   - Schedule: timezone `Asia/Kuala_Lumpur`, every 30 min from 07:00 to 22:00.
    - A successful trigger returns **HTTP 204 No Content**.
 
 The PAT lives in cron-job.org, **not** in the repo — no GitHub repo secret is

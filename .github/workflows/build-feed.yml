@@ -2,13 +2,15 @@ name: Build Media Selangor RSS feed
 
 on:
   # PRIMARY cadence is driven by an external scheduler (cron-job.org) that calls
-  # the workflow_dispatch REST API every 30 min, 08:00–17:00 MYT. GitHub's native
+  # the workflow_dispatch REST API every 30 min, 07:00–22:00 MYT. GitHub's native
   # cron is best-effort and routinely drops/delays runs at the top of the hour,
-  # so it is kept below only as a low-frequency safety net. See the README
+  # so it is kept below only as an hourly safety net. See the README
   # ("External scheduler") for the trigger setup.
   schedule:
-    # Fallback only (GitHub cron is UTC; Malaysia is a fixed UTC+8, no DST):
-    - cron: '13 1,7 * * *'     # 09:13 & 15:13 MYT — off-peak minutes to dodge contention
+    # Fallback only (GitHub cron is UTC; Malaysia is a fixed UTC+8, no DST).
+    # Hourly across the tamilnewsbot digest window (07:00–22:00 MYT): each :13
+    # build lands ~45 min before the bot's top-of-hour run picks it up.
+    - cron: '13 0-14,23 * * *'   # 07:13–22:13 MYT — off-peak minute to dodge contention
   workflow_dispatch:           # external trigger + manual "Run workflow" button
 
 permissions:
