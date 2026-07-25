@@ -8,7 +8,18 @@
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>mediaselangor-rss (+github.com/novinthen/mediaselangor_latest_rss)</generator>
     <language>ms</language>
-    <lastBuildDate>Sat, 25 Jul 2026 03:30:29 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 25 Jul 2026 04:22:36 +0000</lastBuildDate>
+    <item>
+      <title>Mayat bayi dibalut kain ditemukan di rumah sampah asrama IPT</title>
+      <link>https://mediaselangor.com/ms/2026/07/386289</link>
+      <description><![CDATA[<p><img src="https://mssb-media.xcms.io/publisher-5bfcce28b99302cf1f60496d8d90a05d/2024/11/b8179d47811072ac4e8d6626550b07af.webp" alt="Mayat bayi dibalut kain ditemukan di rumah sampah asrama IPT" /></p><p>Mayat seorang bayi yang dibalut dengan kain ditemukan di sebuah rumah sampah asrama institusi pengajian tinggi (IPT) di Kuala Langat, tengah malam tadi.</p>]]></description>
+      <guid isPermaLink="true">https://mediaselangor.com/ms/2026/07/386289</guid>
+      <pubDate>Sat, 25 Jul 2026 04:22:36 +0000</pubDate>
+      <media:group>
+        <media:content url="https://mssb-media.xcms.io/publisher-5bfcce28b99302cf1f60496d8d90a05d/2024/11/b8179d47811072ac4e8d6626550b07af.webp" medium="image"/>
+        <media:thumbnail url="https://mssb-media.xcms.io/publisher-5bfcce28b99302cf1f60496d8d90a05d/2024/11/b8179d47811072ac4e8d6626550b07af.webp"/>
+      </media:group>
+    </item>
     <item>
       <title>EXCO: 14 kali pencemaran sungai, tetapi tiada gangguan bekalan air di Selangor</title>
       <link>https://mediaselangor.com/ms/2026/07/385864</link>
@@ -216,17 +227,6 @@
       <media:group>
         <media:content url="https://mssb-media.xcms.io/publisher-c1a3f893382d2b2f8a9aa22a654d9c97/2026/03/07020a5c7bf6f5dac0f2800d5b8b9418.jpg" medium="image"/>
         <media:thumbnail url="https://mssb-media.xcms.io/publisher-c1a3f893382d2b2f8a9aa22a654d9c97/2026/03/07020a5c7bf6f5dac0f2800d5b8b9418.jpg"/>
-      </media:group>
-    </item>
-    <item>
-      <title>Piala ASEAN 2026: Harimau Malaya sedia gempur Myanmar</title>
-      <link>https://mediaselangor.com/ms/2026/07/386235</link>
-      <description><![CDATA[<p><img src="https://mssb-media.xcms.io/publisher-c1a3f893382d2b2f8a9aa22a654d9c97/2026/07/954452695a46414633935d4ffece2a39.webp" alt="Piala ASEAN 2026: Harimau Malaya sedia gempur Myanmar" /></p><p>Cheng Hoe yakin pemain mampu menyerap tekanan ketika beraksi di hadapan penyokong tuan rumah</p>]]></description>
-      <guid isPermaLink="true">https://mediaselangor.com/ms/2026/07/386235</guid>
-      <pubDate>Sat, 25 Jul 2026 00:30:21 +0000</pubDate>
-      <media:group>
-        <media:content url="https://mssb-media.xcms.io/publisher-c1a3f893382d2b2f8a9aa22a654d9c97/2026/07/954452695a46414633935d4ffece2a39.webp" medium="image"/>
-        <media:thumbnail url="https://mssb-media.xcms.io/publisher-c1a3f893382d2b2f8a9aa22a654d9c97/2026/07/954452695a46414633935d4ffece2a39.webp"/>
       </media:group>
     </item>
   </channel>
