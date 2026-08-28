@@ -8,7 +8,18 @@
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>mediaselangor-rss (+github.com/novinthen/mediaselangor_latest_rss)</generator>
     <language>ms</language>
-    <lastBuildDate>Fri, 28 Aug 2026 05:30:29 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 28 Aug 2026 06:30:37 +0000</lastBuildDate>
+    <item>
+      <title>MB gesa pelajar berpijak pada realiti, jangan terikut FOMO</title>
+      <link>https://mediaselangor.com/ms/2026/08/392806</link>
+      <description><![CDATA[<p><img src="https://mssb-media.xcms.io/publisher-c1a3f893382d2b2f8a9aa22a654d9c97/2026/08/d046f421210e633861ea39cb23adadb4.jpg" alt="MB gesa pelajar berpijak pada realiti, jangan terikut FOMO" /></p><p>Pelajar perlu mampu membuat pilihan sendiri tanpa terlalu dipengaruhi trend semasa</p>]]></description>
+      <guid isPermaLink="true">https://mediaselangor.com/ms/2026/08/392806</guid>
+      <pubDate>Fri, 28 Aug 2026 06:30:37 +0000</pubDate>
+      <media:group>
+        <media:content url="https://mssb-media.xcms.io/publisher-c1a3f893382d2b2f8a9aa22a654d9c97/2026/08/d046f421210e633861ea39cb23adadb4.jpg" medium="image"/>
+        <media:thumbnail url="https://mssb-media.xcms.io/publisher-c1a3f893382d2b2f8a9aa22a654d9c97/2026/08/d046f421210e633861ea39cb23adadb4.jpg"/>
+      </media:group>
+    </item>
     <item>
       <title>MB: Belanjawan Selangor 2027 perkukuh sokongan akademik pelajar</title>
       <link>https://mediaselangor.com/ms/2026/08/392802</link>
@@ -216,17 +227,6 @@
       <media:group>
         <media:content url="https://mssb-media.xcms.io/publisher-5bfcce28b99302cf1f60496d8d90a05d/2023/04/f772ad1a27b738b8fe6a50157c88540c.jpg" medium="image"/>
         <media:thumbnail url="https://mssb-media.xcms.io/publisher-5bfcce28b99302cf1f60496d8d90a05d/2023/04/f772ad1a27b738b8fe6a50157c88540c.jpg"/>
-      </media:group>
-    </item>
-    <item>
-      <title>Raja Muda Selangor gesa pertandingan sukan akar umbi diperbanyak</title>
-      <link>https://mediaselangor.com/ms/2026/08/392723</link>
-      <description><![CDATA[<p><img src="https://mssb-media.xcms.io/publisher-c1a3f893382d2b2f8a9aa22a654d9c97/2026/08/26c81dca091353a9b33073b878cf500c.jpg" alt="Raja Muda Selangor gesa pertandingan sukan akar umbi diperbanyak" /></p><p>Kejayaan SUKMA 2026 perlu jadi pemangkin pembangunan atlet muda</p>]]></description>
-      <guid isPermaLink="true">https://mediaselangor.com/ms/2026/08/392723</guid>
-      <pubDate>Fri, 28 Aug 2026 00:30:21 +0000</pubDate>
-      <media:group>
-        <media:content url="https://mssb-media.xcms.io/publisher-c1a3f893382d2b2f8a9aa22a654d9c97/2026/08/26c81dca091353a9b33073b878cf500c.jpg" medium="image"/>
-        <media:thumbnail url="https://mssb-media.xcms.io/publisher-c1a3f893382d2b2f8a9aa22a654d9c97/2026/08/26c81dca091353a9b33073b878cf500c.jpg"/>
       </media:group>
     </item>
   </channel>
