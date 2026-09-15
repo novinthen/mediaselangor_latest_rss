@@ -8,7 +8,18 @@
     <docs>https://www.rssboard.org/rss-specification</docs>
     <generator>mediaselangor-rss (+github.com/novinthen/mediaselangor_latest_rss)</generator>
     <language>ms</language>
-    <lastBuildDate>Tue, 15 Sep 2026 04:30:29 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 15 Sep 2026 05:30:30 +0000</lastBuildDate>
+    <item>
+      <title>MBDK keluar sembilan kompaun, banteras kegiatan buang sisa di tempat awam</title>
+      <link>https://mediaselangor.com/ms/2026/09/395781</link>
+      <description><![CDATA[<p><img src="https://mssb-media.xcms.io/publisher-c1a3f893382d2b2f8a9aa22a654d9c97/2026/09/c087f5e77db24eb6a56022c9d041b629.jpg" alt="MBDK keluar sembilan kompaun, banteras kegiatan buang sisa di tempat awam" /></p><p>Antara kesalahan dikesan termasuk membuang puntung rokok, kertas, plastik dan sisa makanan di tempat awam</p>]]></description>
+      <guid isPermaLink="true">https://mediaselangor.com/ms/2026/09/395781</guid>
+      <pubDate>Tue, 15 Sep 2026 05:30:30 +0000</pubDate>
+      <media:group>
+        <media:content url="https://mssb-media.xcms.io/publisher-c1a3f893382d2b2f8a9aa22a654d9c97/2026/09/c087f5e77db24eb6a56022c9d041b629.jpg" medium="image"/>
+        <media:thumbnail url="https://mssb-media.xcms.io/publisher-c1a3f893382d2b2f8a9aa22a654d9c97/2026/09/c087f5e77db24eb6a56022c9d041b629.jpg"/>
+      </media:group>
+    </item>
     <item>
       <title>Lelaki maut ketika mengetuai pendakian di Hutan Simpan Ulu Tamu</title>
       <link>https://mediaselangor.com/ms/2026/09/395778</link>
@@ -216,17 +227,6 @@
       <media:group>
         <media:content url="https://mssb-media.xcms.io/publisher-c1a3f893382d2b2f8a9aa22a654d9c97/2026/09/bafd69371de6b86a603c9098c97881c3.jpg" medium="image"/>
         <media:thumbnail url="https://mssb-media.xcms.io/publisher-c1a3f893382d2b2f8a9aa22a654d9c97/2026/09/bafd69371de6b86a603c9098c97881c3.jpg"/>
-      </media:group>
-    </item>
-    <item>
-      <title>Lima kawasan di Selangor catat IPU tidak sihat, Johan Setia tertinggi</title>
-      <link>https://mediaselangor.com/ms/2026/09/395713</link>
-      <description><![CDATA[<p><img src="https://mssb-media.xcms.io/publisher-5bfcce28b99302cf1f60496d8d90a05d/2019/09/85b7e50f2b4dbfd8f2316aca7f5a74c3.jpg" alt="Lima kawasan di Selangor catat IPU tidak sihat, Johan Setia tertinggi" /></p><p>Secara keseluruhan 27 kawasan di seluruh negara berada pada tahap tidak sihat</p>]]></description>
-      <guid isPermaLink="true">https://mediaselangor.com/ms/2026/09/395713</guid>
-      <pubDate>Mon, 14 Sep 2026 13:56:51 +0000</pubDate>
-      <media:group>
-        <media:content url="https://mssb-media.xcms.io/publisher-5bfcce28b99302cf1f60496d8d90a05d/2019/09/85b7e50f2b4dbfd8f2316aca7f5a74c3.jpg" medium="image"/>
-        <media:thumbnail url="https://mssb-media.xcms.io/publisher-5bfcce28b99302cf1f60496d8d90a05d/2019/09/85b7e50f2b4dbfd8f2316aca7f5a74c3.jpg"/>
       </media:group>
     </item>
   </channel>
